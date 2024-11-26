@@ -1,6 +1,5 @@
 {
-  "/page": "app/page.js",
+  "/sync-integration/page": "app/sync-integration/page.js",
   "/configuration/page": "app/configuration/page.js",
-  "/price-management/page": "app/price-management/page.js",
-  "/sync-integration/page": "app/sync-integration/page.js"
+  "/page": "app/page.js"
 }

@@ -1,18 +1,20 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  output: 'standalone',
   images: {
     remotePatterns: [
       {
         protocol: 'https',
         hostname: 'picsum.photos',
-        port: '',
-        pathname: '/**',
       },
     ],
   },
-  server: {
-    port: 2710
-  }
+  env: {
+    HOST: '0.0.0.0',
+  },
+  experimental: {
+    serverActions: true,
+  },
 }
 
 module.exports = nextConfig
